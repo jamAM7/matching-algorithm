@@ -1,0 +1,102 @@
+[
+  {
+    "id": "u1",
+    "name": "Ava",
+    "eventId": "e100",
+    "elo": 1520,
+    "attributes": { "age": 29, "gender": "female" },
+    "desiredAttributes": { "minAge": 25, "maxAge": 35, "preferredGender": "female" },
+    "interests": ["music", "hiking", "travel", "coffee"],
+    "prompts": ["My favorite travel destination is Italy.", "I love hiking on weekends.", "Looking for someone who enjoys live music."]
+  },
+  {
+    "id": "u2",
+    "name": "Liam",
+    "eventId": "e100",
+    "elo": 1505,
+    "attributes": { "age": 31, "gender": "male" },
+    "desiredAttributes": { "minAge": 24, "maxAge": 34, "preferredGender": "female" },
+    "interests": ["travel", "ai", "coffee", "running"],
+    "prompts": ["Weekend hikes are my reset.", "Italian food is elite.", "Live music over clubs."]
+  },
+  {
+    "id": "u3",
+    "name": "Mia",
+    "eventId": "e100",
+    "elo": 1475,
+    "attributes": { "age": 27, "gender": "female" },
+    "desiredAttributes": { "minAge": 25, "maxAge": 35, "preferredGender": "male" },
+    "interests": ["film", "music", "coffee", "yoga"],
+    "prompts": ["I’m a movie buff.", "Love discovering new cafés.", "Sunday yoga is sacred."]
+  },
+  {
+    "id": "u4",
+    "name": "Ethan",
+    "eventId": "e100",
+    "elo": 1550,
+    "attributes": { "age": 30, "gender": "male" },
+    "desiredAttributes": { "minAge": 23, "maxAge": 33, "preferredGender": "female" },
+    "interests": ["music", "tech", "fitness", "coffee"],
+    "prompts": ["Always down for a gig.", "Work in tech.", "Morning workouts keep me sane."]
+  },
+  {
+    "id": "u5",
+    "name": "Sophia",
+    "eventId": "e100",
+    "elo": 1490,
+    "attributes": { "age": 28, "gender": "female" },
+    "desiredAttributes": { "minAge": 26, "maxAge": 34, "preferredGender": "male" },
+    "interests": ["running", "tech", "coffee", "design"],
+    "prompts": ["UX designer by day.", "Running clears my mind.", "Coffee enthusiast."]
+  },
+  {
+    "id": "u6",
+    "name": "Noah",
+    "eventId": "e100",
+    "elo": 1530,
+    "attributes": { "age": 32, "gender": "male" },
+    "desiredAttributes": { "minAge": 25, "maxAge": 33, "preferredGender": "female" },
+    "interests": ["travel", "music", "art", "film"],
+    "prompts": ["Love discovering indie films.", "Travelled to 15 countries.", "Art galleries on rainy days."]
+  },
+  {
+    "id": "u7",
+    "name": "Isabella",
+    "eventId": "e100",
+    "elo": 1510,
+    "attributes": { "age": 30, "gender": "female" },
+    "desiredAttributes": { "minAge": 27, "maxAge": 36, "preferredGender": "female" },
+    "interests": ["fitness", "food", "travel", "music"],
+    "prompts": ["Into cooking classes.", "Gym rat with balance.", "Concert addict."]
+  },
+  {
+    "id": "u8",
+    "name": "Oliver",
+    "eventId": "e101",
+    "elo": 1600,
+    "attributes": { "age": 29, "gender": "male" },
+    "desiredAttributes": { "minAge": 25, "maxAge": 33, "preferredGender": "female" },
+    "interests": ["art", "photography", "travel", "music"],
+    "prompts": ["Photography is my therapy.", "I never say no to sushi.", "Music festivals are my happy place."]
+  },
+  {
+    "id": "u9",
+    "name": "Emily",
+    "eventId": "e101",
+    "elo": 1570,
+    "attributes": { "age": 27, "gender": "female" },
+    "desiredAttributes": { "minAge": 25, "maxAge": 35, "preferredGender": "male" },
+    "interests": ["art", "travel", "music", "reading"],
+    "prompts": ["Reading in parks is underrated.", "Love art galleries.", "Travel junkie."]
+  },
+  {
+    "id": "u10",
+    "name": "Jack",
+    "eventId": "e101",
+    "elo": 1540,
+    "attributes": { "age": 30, "gender": "male" },
+    "desiredAttributes": { "minAge": 24, "maxAge": 33, "preferredGender": "female" },
+    "interests": ["fitness", "travel", "music", "film"],
+    "prompts": ["Workout buddy?", "Movie nights are my jam.", "Spontaneous road trips > plans."]
+  }
+]

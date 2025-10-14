@@ -1,0 +1,19 @@
+{
+  "name": "matching-service",
+  "version": "1.0.0",
+  "main": "server.js",
+  "description": "Lightweight matching service for event-based pairing demo",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

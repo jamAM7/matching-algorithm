@@ -3,20 +3,20 @@ function meetsPreferences(user, candidate) {
   const prefs = user.desiredAttributes || {};
   const cand = candidate.attributes || {};
 
-  // Normalize genders to lowercase for comparison
+  // Normalize genders to lowercase for comparison (this is not really needed but just in case)
   const prefGender = prefs.preferredGender ? prefs.preferredGender.toLowerCase() : null;
   const candGender = cand.gender ? cand.gender.toLowerCase() : null;
 
-  // Gender preference — only check if the user has a preference
+  // First check if there is a gender preference, and the candidate has a gender, then check if theyre not equal
   if (prefGender && candGender && prefGender !== candGender) {
     return false;
   }
 
   // Age range preference
-  if (typeof prefs.minAge === "number" && typeof cand.age === "number" && cand.age < prefs.minAge) {
+  if (cand.age < prefs.minAge) {
     return false;
   }
-  if (typeof prefs.maxAge === "number" && typeof cand.age === "number" && cand.age > prefs.maxAge) {
+  if (cand.age > prefs.maxAge) {
     return false;
   }
 
@@ -31,7 +31,7 @@ function compatibilityScore(a, b) {
   interestsA.forEach(interest => {
     if (interestsB.has(interest)) shared++;
   });
-  return shared; // simple numeric score
+  return shared; //  returns simple numeric score like 1,2, or 3/
 }
 
 // ===== Main matching logic =====
@@ -48,8 +48,8 @@ function findMatchForUser(currentUser, everyone, eloRange = 100) {
 
   // 3 Filter: Elo range (within ± eloRange)
   candidates = candidates.filter(c => {
-    const userElo = typeof currentUser.elo === "number" ? currentUser.elo : 1500;
-    const candElo = typeof c.elo === "number" ? c.elo : 1500;
+    const userElo = typeof currentUser.elo === "number" ? currentUser.elo : 1500; //sets default here to 1500 for a new user for exmaple
+    const candElo = typeof c.elo === "number" ? c.elo : 1500; //sets default here to 1500 for a new user for exmaple
     return Math.abs(candElo - userElo) <= eloRange;
   });
 
